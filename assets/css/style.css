@@ -723,6 +723,26 @@ p {
     width: 49%;
 }
 
+@media (max-width:768px) {
+    .w-49 {
+        width: 100%;
+    }
+
+    .justify-content-max-md-center {
+        justify-content: center;
+    }
+}
+
+.arrow {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
 .b-none {
     border: none;
     box-shadow: 0px 0px 36px -3px #dadada;
@@ -786,4 +806,84 @@ textarea[placeholder="Send messange"] {
 .py-60 {
     padding-top: 66px;
     padding-bottom: 60px;
+}
+
+.footer-img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.footer-img:hover {
+    background-color: var(--primary-color);
+}
+
+.footer-img:hover svg path {
+    fill: #ffff;
+}
+
+.footer-links {
+    font-family: var(--font-work);
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-4);
+    line-height: var(--line-height-24);
+    text-align: left;
+    color: var(--base-color);
+}
+
+.footer-links:hover {
+    color: var(--primary-color);
+}
+
+.footer-heading {
+    font-family: var(--font-work);
+    font-size: var(--text-size-40);
+    font-weight: var(--font-weight-6);
+    line-height: var(--line-height-48);
+    color: var(--base-color);
+    text-align: left;
+}
+
+@media (max-width:992px) {
+    .footer-heading {
+        font-size: var(--text-size-25);
+    }
+}
+
+.brdr-none {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-family: var(--font-work);
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-4);
+    line-height: var(--line-height-24);
+    color: var(--tertiary-color);
+
+}
+
+.input-img {
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.inpu-img {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-pramery {
+    background-color: var(--primary-color);
+}
+
+.arrow {
+    display: none;
 }
