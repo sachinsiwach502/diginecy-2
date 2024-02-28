@@ -782,3 +782,8 @@ textarea[placeholder="Send messange"] {
         padding: 2px;
     }
 }
+
+.py-60 {
+    padding-top: 66px;
+    padding-bottom: 60px;
+}
