@@ -75,7 +75,7 @@
     font-family: var(--font-work);
     font-weight: var(--font-weight-5);
     color: var(--nav-color);
-    font-size: var(--text-size-20);
+
     line-height: var(--line-height-24);
     margin-top: 0;
     margin-bottom: 0;
@@ -1003,11 +1003,22 @@ textarea[placeholder="Send messange"] {
         left: 0;
     }
 
+    input:checked~label[for="menuIcon"] {
+        position: fixed;
+        right: 13%;
+    }
+
     .max-md-30 {
         margin-top: 30px;
     }
 
 
+}
+
+@media (min-width:992px) {
+    .nav-links {
+        font-size: var(--text-size-20);
+    }
 }
 
 @media (max-width:992px) {
@@ -1021,6 +1032,7 @@ textarea[placeholder="Send messange"] {
 
     .nav-links {
         font-size: var(--text-size-16) !important;
+        width: max-content;
     }
 
     .better {
